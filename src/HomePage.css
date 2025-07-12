@@ -1,0 +1,594 @@
+.app{
+    padding: 20px;
+    text-align: center;
+}
+.navbar {
+    position: sticky;
+    height: 20px;
+    color: aliceblue;
+    background-color:  hsl(0, 0%, 10%);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.nav-links{
+    list-style: none;
+    display: flex;
+  gap: 24px;
+  border-right: 1px solid #999999;
+  padding-inline: 24px;
+}
+
+.bb {
+  display: grid;
+  place-items: center;
+  background-color: #0056b3;
+  margin: 10px auto;
+  padding: 20px;
+  margin-top: 0;
+  color: #fff;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.bb > h1 {
+  font-size: 2.5rem;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+body{
+    background-color: rgba(249, 246, 246, 0.834);
+}
+
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .log-in {
+    font-weight: 500;
+    padding: 12px 22px;
+    background-color: transparent;
+    color: #999999;
+    border-radius: 10px;
+    border: 2px solid #0aa5ff;
+    transition: 0.2s;
+  }
+
+ /* Main container for the grid layout */
+ .grid-container {
+  display: grid;
+  grid-template-rows: auto auto; /* Two rows: one for the inputs, one for the button */
+  gap: 10px;
+  justify-items: center;
+  padding: 20px;
+  background: url("busicon1.jpg"); /* Example texture */
+  background-color: #80cafe; /* Fallback color */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  color: #fff;
+  margin: 20px auto;
+  max-width: 80%;
+  border-radius: 10px;
+}
+
+/* Inner grid for the inputs */
+.input-grid {
+  display: grid;
+  grid-template-columns: 2fr auto 2fr 2fr; /* Adjusted to have a smaller column for the exchange button */
+  gap: 10px;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+  position: relative;
+}
+
+/* Individual input styles */
+.select-custom {
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  font-size: 1rem;
+  text-align: center;
+  background: #f4f4f4;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.select-custom:hover {
+  background: #e6f0ff;
+  border-color: #0056b3;
+}
+
+.select-custom:focus {
+  outline: none;
+  border-color: #ffdd57;
+  box-shadow: 0 0 8px rgba(255, 221, 87, 0.8);
+}
+
+/* Styling for the exchange button */
+.exchange-button {
+  grid-column: 2; /* Positioned in the second column */
+  align-self: center; /* Align vertically */
+  justify-self: center; /* Align horizontally */
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: #316ff5;
+  color: #fafdfd;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  margin: 0 10px;
+}
+
+.exchange-button:hover {
+  background-color: #fa191d;
+  transform: scale(1.1);
+}
+
+/* Styling for the date picker */
+.date-picker {
+  width: 100%;
+  max-width: 200px;
+  padding: 15px;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f4f4f4;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.date-picker:focus {
+  border-color: #ffdd57;
+  background-color: #e6f0ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(255, 221, 87, 0.8);
+}
+
+.date-picker::-webkit-calendar-picker-indicator {
+  background-color: #007bff;
+  border-radius: 50%;
+  padding: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.date-picker::-webkit-calendar-picker-indicator:hover {
+  transform: scale(1.2);
+}
+
+/* Styling for the submit button */
+.submit-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.submit-button {
+  padding: 12px 24px;
+  border: 3px solid #fff;
+  border-radius: 12px;
+  background-color: #4bff2b;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.submit-button:hover {
+  background-color: #ff6a33;
+  border-color: #ffdd57;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.submit-button:active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+
+.custom-alert {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1060df;
+  color: #721c24;
+  padding: 20px;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.custom-alert p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.custom-alert button {
+  margin-top: 15px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #e48716;
+  color: #155724;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.custom-alert button:hover {
+  background-color: #c3e6cb;
+}
+
+.select-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px; /* Small uniform gap between cards */
+  padding: 10px;
+  max-width: 800px;           /* Limits total width of grid */
+  margin: 0 auto;             /* Centers the entire grid */
+  justify-items: center;      /* Centers each card in its grid cell */
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.07);
+  padding: 12px;
+  width: 100%;
+  max-width: 150px;           /* Consistent card width */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: #007bff;
+}
+
+.card p {
+  font-size: 13px;
+  color: #333;
+}
+
+
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.chat-button {
+  background-color: #ff1100;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.chat-button:hover {
+  background-color: #0056b3;
+}
+
+.chat-box {
+  width: 300px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.chat-header {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.chat-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.chat-body input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.send-btn {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.send-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 0; /* Hidden at the start and end */
+  }
+  33.33%, 66.66% {
+    opacity: 1; /* Visible during the middle */
+  }
+}
+ 
+.benefits-section {
+  padding: 60px 30px;
+  background-color: #fefefe;
+  width: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.benefits-heading {
+  font-size: 30px;
+  text-align: center;
+  color: #222;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.benefits-heading::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background-color: #ff4d4f;
+  border-radius: 2px;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.benefits-item {
+  background-color: #ffffff;
+  border-left: 6px solid #007bff;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+}
+
+.benefits-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-left-color: #ff4d4f;
+}
+
+.benefits-item h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.benefits-item p {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.recent-bookings-section {
+  width: 80%;
+  height: 50%;
+  max-width: 800px;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.section-heading {
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.booking-list {
+  display: flex;            /* THIS makes it horizontal */
+  flex-direction: row;      /* Just in case */
+  gap: 15px;
+  overflow-x: auto;         /* Enables horizontal scrolling */
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.booking-item {
+  min-width: 220px;         /* Fixed width so items don’t shrink */
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;           /* Prevent shrinking */
+}
+
+
+
+.footer {
+  background-color: #111;
+  color: #f0f0f0;
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Group left side info (company + links) */
+.left-group {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  flex: 1 1 300px;
+}
+
+/* Right side: Get in Touch */
+.footer-section.get-in-touch {
+  flex: 1 1 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+/* Contact form */
+.get-in-touch input,
+.get-in-touch textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: none;
+}
+
+.get-in-touch button {
+  background-color: orange;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Social section */
+.footer-section.social-media-section {
+  text-align: center;
+  margin: 40px auto 20px;
+}
+
+.social-media-section h4 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.social-icons-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 40px);
+  gap: 20px;
+  justify-content: center;
+}
+
+.social-icons-grid a {
+  font-size: 28px;
+  color: #f0f0f0;
+  transition: color 0.3s;
+}
+
+.social-icons-grid a:hover {
+  color: #00bcd4;
+}
+
+/* Typography and links */
+.footer-section h2,
+.footer-section h3 {
+  margin-bottom: 12px;
+  color: #00bcd4;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.footer-section li {
+  margin-bottom: 6px;
+}
+
+.footer-section a {
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+  color: #00bcd4;
+}

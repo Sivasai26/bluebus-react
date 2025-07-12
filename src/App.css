@@ -1,0 +1,60 @@
+.app{
+    padding: 20px;
+    text-align: center;
+}
+.navbar {
+    position: sticky;
+    height: 20px;
+    color: aliceblue;
+    background-color:  hsl(0, 0%, 10%);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.nav-links{
+    list-style: none;
+    display: flex;
+  gap: 24px;
+  border-right: 1px solid #999999;
+  padding-inline: 24px;
+}
+
+.heading{
+    background-color: blue;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+body{
+    background-color: rgba(191, 188, 188, 0.834);
+}
+
+.box{
+    background-color: rgb(110, 110, 110);
+    margin: 50px;
+    color: aliceblue;
+    border: 5px solid blue;
+    width: 1000px;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .log-in {
+    font-weight: 500;
+    padding: 12px 22px;
+    background-color: transparent;
+    color: #999999;
+    border-radius: 10px;
+    border: 2px solid #0aa5ff;
+    transition: 0.2s;
+  }

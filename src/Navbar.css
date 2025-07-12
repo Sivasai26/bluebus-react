@@ -1,0 +1,53 @@
+/* Reset some default browser styles for nav links */
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar a:hover {
+    color: #0aa5ff;
+  }
+  
+  /* Navbar Container */
+  .navbar {
+    display: flex;
+    justify-content: space-between; /* Spread items across the navbar */
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ee1717;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Heading */
+  .heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: blue;
+    margin-bottom: 0; /* Remove bottom margin to avoid extra space */
+  }
+  
+  /* Menu */
+  .menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  
+  /* Log In Button */
+  .log-in {
+    font-weight: 500;
+    padding: 12px 22px;
+    background-color: transparent;
+    color: #999999;
+    border-radius: 10px;
+    border: 2px solid #0aa5ff;
+    transition: background-color 0.2s ease, color 0.2s ease;
+  }
+  
+  .log-in:hover {
+    background-color: #0aa5ff;
+    color: #fff;
+  }
+  

@@ -1,0 +1,180 @@
+/* =============== Confirmation Container =============== */
+.confirmation-container {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Confirmation Card Styling */
+.confirmation-card {
+  background-color: #604f4f;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Card Sections (for Ticket Details etc.) */
+.card-section {
+  text-align: left;
+  margin: 10px 0;
+}
+
+.card-section p {
+  margin: 5px 0;
+}
+
+/* Footer & Print Button */
+.confirmation-footer {
+  margin-top: 20px;
+}
+
+.print-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.print-button:hover {
+  background-color: #0056b3;
+}
+
+/* Payment Success Message */
+.payment-success-message > h1 {
+  color: #ddd;
+}
+
+/* =============== Passenger Details Form =============== */
+.passenger-details-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.passenger-details {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.passenger-details h3 {
+  color: #333;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.passenger-details label {
+  display: block;
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.passenger-details input,
+.passenger-details select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.passenger-details input:focus,
+.passenger-details select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* =============== Ticket Card =============== */
+.ticket-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  font-family: 'Arial', sans-serif;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.ticket-card h2 {
+  text-align: center;
+  font-size: 1.8em;
+  color: #ec7d28;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f2f2f2;
+  padding-bottom: 10px;
+}
+
+/* Ticket Sections */
+.ticket-section {
+  margin-bottom: 20px;
+}
+
+.ticket-section h3 {
+  font-size: 1.5em;
+  color: #eca728;
+  margin-bottom: 10px;
+  border-left: 5px solid #4CAF50;
+  padding-left: 10px;
+}
+
+.ticket-section p {
+  font-size: 1.1em;
+  margin: 5px 0;
+  color: #555;
+  line-height: 1.5;
+}
+
+.ticket-section p strong {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Grouping within Ticket Section */
+.ticket-section div {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.ticket-section div p {
+  margin-left: 10px;
+}
+
+/* Global Heading Styling */
+h2 {
+  color: #007bff;
+}
